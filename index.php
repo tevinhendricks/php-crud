@@ -12,19 +12,21 @@
     <div class="container h-100">
         <div class="row h-100 justify-content-center align-items-center">
             <div class="col-md-6 col-sm-12 col-lg-6">
-                <form action="login.php" method="post">
-                    <h2>LOGIN</h2>
-                    <?php 
-                    if(isset($_GET['error'])) { ?>
-                        <p class="error"><?php echo $_GET['error']; ?></p>
-                    <?php } ?>
-                    <label for="uname">User Name</label>
-                    <input type="text" class="form-control" name="uname" placeholder="User Name"><br>
-                    <label for="password">Password</label>
-                    <input type="text" class="form-control" name="password" placeholder="Password"><br>
+                <div style='border:2px solid #eeeeee; padding:35px;'>
+                    <form action="login.php" method="post">
+                        <h2>LOGIN</h2>
+                        <?php 
+                        if(isset($_GET['error'])) { ?>
+                            <p class="error"><?php echo $_GET['error']; ?></p>
+                        <?php } ?>
+                        <label for="uname">User Name</label>
+                        <input type="text" class="form-control" name="uname" placeholder="User Name"><br>
+                        <label for="password">Password</label>
+                        <input type="text" class="form-control" name="password" placeholder="Password"><br>
 
-                    <button class="btn btn-primary" type="submit">Login</button>
-                </form>
+                        <button class="btn btn-primary" type="submit">Login</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
